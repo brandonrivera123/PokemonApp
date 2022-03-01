@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Smoke Tests matches snapshot 1`] = `
+<div
+  className="card"
+>
+  <div
+    className="card__media"
+    style={
+      Object {
+        "backgroundImage": "url(undefined)",
+      }
+    }
+  />
+  <div
+    className="card__content poison"
+  >
+    <h2
+      className="pokemonName"
+      data-testid="card-name"
+    />
+    <div
+      className="type-container"
+    >
+      <div
+        className="type"
+        style={
+          Object {
+            "color": "purple",
+          }
+        }
+      >
+        poison
+      </div>
+    </div>
+  </div>
+</div>
+`;

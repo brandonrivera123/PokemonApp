@@ -1,0 +1,19 @@
+.main {
+  /* background-color: #282c34; */
+  height: 100vh;
+  overflow: hidden;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(5%, #2f6ed3),
+    color-stop(20%, #5095e4),
+    color-stop(60%, #5095e4),
+    color-stop(95%, #2f6ed3)
+  );
+}
+
+.body {
+  height: 100vh;
+  overflow: auto;
+}

@@ -1,0 +1,137 @@
+/* Type Classes */
+.poison {
+  /* background: rgba(161, 33, 193, 0.2); */
+  background: linear-gradient(
+    to right bottom,
+    rgb(161, 33, 193, 0.8),
+    rgb(161, 33, 193, 0.3)
+  );
+}
+.normal {
+  /* background: rgba(55, 55, 55, 0.5); */
+  background: linear-gradient(
+    to right bottom,
+    rgb(55, 55, 55, 0.7),
+    rgb(55, 55, 55, 0.3)
+  );
+}
+.grass {
+  /* background: rgba(126, 211, 33, 0.4); */
+  background: linear-gradient(
+    to right bottom,
+    rgb(126, 211, 33, 0.8),
+    rgb(126, 211, 33, 0.3)
+  );
+}
+.fire {
+  /* background: rgba(226, 154, 35, 0.65); */
+  background: linear-gradient(
+    to right bottom,
+    rgb(243, 155, 10, 0.8),
+    rgb(243, 155, 10, 0.5)
+  );
+}
+.water {
+  /* background: rgba(51, 51, 223, 0.2); */
+  background: linear-gradient(
+    to right bottom,
+    rgb(51, 51, 223, 0.6),
+    rgb(51, 51, 223, 0.25)
+  );
+}
+.bug {
+  /* background: rgba(225, 255, 0, 0.4); */
+  background: linear-gradient(
+    to right bottom,
+    rgb(225, 255, 0, 0.6),
+    rgb(225, 255, 0, 0.25)
+  );
+}
+.fairy {
+  /* background: rgba(248, 199, 255, 0.5); */
+  background: linear-gradient(
+    to right bottom,
+    rgb(248, 199, 255, 0.8),
+    rgb(248, 199, 255, 0.45)
+  );
+}
+.electric {
+  /* background: rgba(255, 235, 59, 0.65); */
+  background: linear-gradient(
+    to right bottom,
+    rgb(255, 235, 59, 0.8),
+    rgb(255, 235, 59, 0.45)
+  );
+}
+.ground {
+  /* background: rgba(217, 162, 42, 0.6); */
+  background: linear-gradient(
+    to right bottom,
+    rgb(217, 162, 42, 0.8),
+    rgb(217, 162, 42, 0.45)
+  );
+}
+.rock {
+  /* background: rgba(139, 87, 42, 0.6); */
+  background: linear-gradient(
+    to right bottom,
+    rgb(139, 87, 42, 0.8),
+    rgb(139, 87, 42, 0.45)
+  );
+}
+.fighting {
+  /* background: rgba(182, 29, 0, 0.5); */
+  background: linear-gradient(
+    to right bottom,
+    rgb(182, 29, 0, 0.8),
+    rgb(182, 29, 0, 0.45)
+  );
+}
+.psychic {
+  /* background: rgba(255, 105, 180, 0.6); */
+  background: linear-gradient(
+    to right bottom,
+    rgb(255, 105, 180, 0.8),
+    rgb(255, 105, 180, 0.45)
+  );
+}
+.ice {
+  /* background: rgba( 43, 231, 248, 0.4 ); */
+  background: linear-gradient(
+    to right bottom,
+    rgb(43, 231, 248, 0.8),
+    rgb(43, 231, 248, 0.3)
+  );
+}
+.dragon {
+  /* background: rgba( 108, 19, 202, 0.25 ); */
+  background: linear-gradient(
+    to right bottom,
+    rgb(108, 19, 202, 0.8),
+    rgb(108, 19, 202, 0.3)
+  );
+}
+.ghost {
+  /* background: rgba( 108, 19, 202, 0.25 ); */
+  background: linear-gradient(
+    to right bottom,
+    rgba(72, 38, 85, 0.8),
+    rgb(72, 38, 85, 0.5)
+  );
+}
+.steel {
+  /* background: rgba( 108, 19, 202, 0.25 ); */
+  background: linear-gradient(
+    to right bottom,
+    rgb(105, 105, 105, 0.8),
+    rgb(105, 105, 105, 0.4)
+  );
+}
+.dark {
+  /* background: rgba( 108, 19, 202, 0.25 ); */
+  background: linear-gradient(
+    to right bottom,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.5)
+  );
+}
