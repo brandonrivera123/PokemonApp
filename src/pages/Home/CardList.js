@@ -16,6 +16,7 @@ export const CardList = ({ isError, allPokemon, isLoading }) => {
                 img={item.sprites.front_default}
                 name={item.name}
                 type={item.types}
+                id={item.id}
                 // description={description[index]}
                 loading={isLoading}
               />

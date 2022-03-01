@@ -3,6 +3,7 @@
 exports[`Smoke Tests matches snapshot 1`] = `
 <div
   className="card"
+  onClick={[Function]}
 >
   <div
     className="card__media"

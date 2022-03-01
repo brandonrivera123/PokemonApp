@@ -1,17 +1,24 @@
 import React from "react";
 import { Loader, Badge } from ".";
+import { useNavigate } from "react-router-dom";
 import types from "styles/type.module.css";
 import styles from "./styles/card.module.css";
 
 export const Card = ({
   img,
   name,
+  id,
   // description,
   loading,
   type,
 }) => {
+  const navigate = useNavigate();
+
   return (
-    <div className={styles.card}>
+    <div
+      className={styles.card}
+      onClick={() => navigate(`stats/${id}/${name}`)}
+    >
       {!loading ? (
         <div
           className={styles.card__media}
