@@ -1,0 +1,21 @@
+.container {
+  margin-top: 70px;
+  height: calc(100vh - 70px);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.error {
+  text-align: center;
+  color: white;
+  margin: 10px 0px;
+}
+
+.error__info {
+  color: #fd0045;
+  background: #ffa4a4;
+  margin: 0px 50px;
+  padding: 20px;
+  border-radius: 20px;
+}

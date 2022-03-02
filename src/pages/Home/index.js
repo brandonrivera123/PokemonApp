@@ -7,7 +7,7 @@ import {
 import { CardList } from "./CardList";
 import { Footer } from "./Footer";
 
-export const Home = () => {
+const Home = () => {
   const baseUrl = "https://pokeapi.co/api/v2/pokemon";
   const [allPokemon, setAllPokemon] = useState([]);
   const [nextUrl, setNextUrl] = useState("");
@@ -58,3 +58,5 @@ export const Home = () => {
     </>
   );
 };
+
+export default Home;

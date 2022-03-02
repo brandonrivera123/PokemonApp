@@ -1,0 +1,56 @@
+.card__media {
+  display: block;
+  /* background-size: cover; */
+  /* background: #333333; */
+  width: 150px;
+  background: rgba(255, 255, 255, 0.2);
+  /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 140px;
+}
+
+.stat__container {
+  display: flex;
+  justify-content: center;
+}
+
+.stat__card {
+  background: white;
+  margin: 20px 0px;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.stat__header {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid lightgray;
+}
+
+.stat__row {
+  display: grid;
+  grid-template-columns: 140px 30px auto;
+  gap: 10px;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.progress {
+  height: 10px;
+  background: #8a8a8a4f;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress__bar {
+  background: #62d4b5;
+  height: 100%;
+  width: 20%;
+  border-radius: 20px;
+}

@@ -1,6 +1,6 @@
 export const colors = {
   fire: "#b57400",
-  water: "#3838cf",
+  water: "#5b5bbf",
   fighting: "#b70000",
   electric: "#b99f3c",
   normal: "#505050",
@@ -14,7 +14,7 @@ export const colors = {
   ghost: "#7c6277",
   psychic: "#d75596",
   dragon: "#3a2139",
-  ice: "#31bcde",
+  ice: "#00b1dd",
   steel: "#58606a",
   dark: "black",
 };
