@@ -1,13 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { getPokemon } from "services";
 import { useParams } from "react-router-dom";
+import { BaseStats } from "./BaseStats";
+import { Moves } from "./Moves";
 import styles from "./styles/stats.module.css";
+
+const tabHeaders = ["Base Stats", "Moves", "Types", "Berries"];
 
 const Stats = () => {
   const { pokemonId } = useParams();
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
+  const [active, setActive] = useState(0);
 
   async function getPokemonInfo(url) {
     try {
@@ -38,31 +43,41 @@ const Stats = () => {
       <div className={styles.stat__container}>
         <div className={styles.stat__card}>
           <div className={styles.stat__header}>
-            <div>Base Stats</div>
+            {tabHeaders.map((item, index) => (
+              <StatHeaders
+                key={index}
+                index={index}
+                item={item}
+                active={active}
+                setActive={setActive}
+              />
+            ))}
           </div>
-          {data.stats.map((item, index) => (
-            <StatRow key={index} item={item} />
-          ))}
+          <div
+            style={{ left: `calc(calc(100% / 4) * ${active}` }}
+            className={styles["tab-indicator"]}
+          ></div>
+          <StatBody active={active}>
+            <BaseStats active={active} data={data} />
+            <Moves active={active} data={data} />
+          </StatBody>
         </div>
       </div>
     </div>
   );
 };
 
-const StatRow = ({ item }) => {
+const StatBody = ({ children, active }) => {
+  return <div className={styles["tab-body"]}>{children[active]}</div>;
+};
+
+const StatHeaders = ({ item, index, active, setActive }) => {
   return (
-    <div className={styles.stat__row}>
-      <div>{item.stat.name}</div>
-      <div>{item.base_stat}</div>
-      <div className={styles.progress}>
-        <div
-          className={styles.progress__bar}
-          style={{
-            width: `${item.base_stat}%`,
-            background: item.base_stat < 50 && "#ff2f00d1",
-          }}
-        ></div>
-      </div>
+    <div
+      onClick={() => setActive(index)}
+      className={active === index ? styles.active : null}
+    >
+      {item}
     </div>
   );
 };
