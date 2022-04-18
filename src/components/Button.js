@@ -1,5 +1,4 @@
 import React from "react";
-// import { StyledButton, ButtonContent } from "./styles/button.styles";
 import { Ripple } from ".";
 import styles from "./styles/button.module.css";
 
